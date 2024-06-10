@@ -22,6 +22,10 @@ public class Basics {
 // when - Submit the API - resource,http method
 // Then - validate the response
 		
+		// Pushing my downloaded code to GIThub
+		//****
+		//****
+		
 		RestAssured.baseURI= "https://rahulshettyacademy.com";
 		String response = given().log().all().queryParam("key", "qaclick123").header("Content-Type","application/json")
 		.body(payload.AddPlace()).when().post("maps/api/place/add/json")
