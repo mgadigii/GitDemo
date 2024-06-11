@@ -27,7 +27,7 @@ public class Basics {
 		//****
 		System.out.println("Test");
 		System.out.println("Created DevBranch to test GIT");
-		System.out.Println("push code to DevBranch GIThub - Git_Working");	
+		System.out.println("push code to DevBranch GIThub - Git_Working");	
 		RestAssured.baseURI= "https://rahulshettyacademy.com";
 		String response = given().log().all().queryParam("key", "qaclick123").header("Content-Type","application/json")
 		.body(payload.AddPlace()).when().post("maps/api/place/add/json")
