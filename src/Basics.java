@@ -26,6 +26,7 @@ public class Basics {
 		//****
 		//****
 		System.out.println("Test");
+		System.out.println("Created DevBranch to test GIT");
 		
 		RestAssured.baseURI= "https://rahulshettyacademy.com";
 		String response = given().log().all().queryParam("key", "qaclick123").header("Content-Type","application/json")
