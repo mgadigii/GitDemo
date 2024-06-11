@@ -25,7 +25,6 @@ public class Basics {
 		// Pushing my downloaded code to GIThub
 		//****
 		//****
-		System.out.println("Test");
 		
 		RestAssured.baseURI= "https://rahulshettyacademy.com";
 		String response = given().log().all().queryParam("key", "qaclick123").header("Content-Type","application/json")
