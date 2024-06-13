@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage ( stage 1 : compile code) {
+        stage ( stage 1 : Compile Code) {
             steps {
                 bat "mvn compile"
                 echo "Step mvn compile"
@@ -13,7 +13,7 @@ pipeline {
                 echo "Step mvn test"
             }
             }
-            stage ( stage 3 : Create build) {
+            stage ( stage 3 : Create Build) {
             steps {
                 bat "mvn package"
                 echo "Step mvn package"
