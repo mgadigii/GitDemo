@@ -7,13 +7,7 @@ pipeline {
                 echo "Step mvn compile"
             }
         }
-            stage (Run Unit Test) {
-            steps {
-                bat "mvn test"
-                echo "Step mvn test"
-            }
-            }
-            stage (Create Build) {
+           stage (Create Build) {
             steps {
                 bat "mvn package"
                 echo "Step mvn package"
